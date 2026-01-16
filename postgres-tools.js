@@ -79,7 +79,7 @@ const selectQuery = async (sqlstatement) => {
 
 const getWebUserData = async (values) => {
     let sqlstatement = 'SELECT * FROM webuser WHERE email = $1';
-    let resulset = await pool.query(sqlstatement, values);
+    let resulset = await pool.query(sqlstatement, values); 
     return resulset;
 }
 /** 
